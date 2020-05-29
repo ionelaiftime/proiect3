@@ -1,0 +1,38 @@
+<header>
+       
+    <% if(utilizator!=null) {%>
+    <h1 class="log">
+        Logat ca <%- utilizator.prenume-%> <%-utilizator.nume-%>!
+    </h1>
+    <%} %>
+    <form action="logout" method="get">
+        <input type="submit" value="logout" class="btnlogout" /> 
+    </form>
+</header>
+<main >
+    <h1 class="titlu">Rezultat Chestionar</h1>
+   
+    <form  class="chestionar" action="/rezultat-chestionar" method="POST">
+        <% for(let i=0;i<intrebari.length;i++){ %>
+        <p><%- intrebari[i].intrebare %></p>
+            <% for(let j=0;j<intrebari[i].variante.length;j++){ %>
+                <% if(j==intrebari[i].corect){%>
+                    <input type="radio"  name="q <%- i %>" value="<%- j %>"checked ><%- intrebari[i].variante[j] %><br/>
+                <%} else {%> 
+                    <input type="radio" name="q <%- i %>" value="<%- j %>"><%- intrebari[i].variante[j] %><br/>
+                        
+                <%}%>
+            <%} %>
+        <% } %>
+        <p> Raspunsuri corecte: <%- Raspunsuri_corecte -%>  </p>
+    </form>
+</main>
+<footer>
+
+</footer>
+
+
+
+
+
+

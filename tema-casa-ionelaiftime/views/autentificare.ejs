@@ -1,0 +1,15 @@
+<h1 class="titlu">Autentificare</h1>
+<form class="chestionar" action="/verificare-autentificare" method="POST">
+
+
+    
+    <h1 class="msgeroare" > <%- mesajEroare -%> </h1>
+    <div class="autentif">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="utilizator" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+    </div>
+    <input type="submit" value="Autentifica" class="btnsubmit" />    
+</form>
