@@ -1,35 +1,29 @@
 [
     {
-      "intrebare": "Tastatura este un dispozitiv periferic de intrare:",
-      "variante": ["Adevarat", "Fals"],
-      "corect": 0
-    },
-    {
-      "intrebare": "Care din următoarele dispozitive periferice sunt dispozitive de intrare?",
-      "variante": ["Mouse", "Monitor","Imprimanta","Boxe"],
-      "corect": 0
-    },
-    {
-      "intrebare": "Monitorul este un dispozitiv periferic de ieșire",
-      "variante": ["Adevarat", "Fals"],
-      "corect": 0
-     
-    },
-    {
-      "intrebare": "Dispozitivele de intrare sunt acele dispozitive cu ajutorul cărora",
-      "variante": ["calculatorul transmite informații către utilizator", "utilizatorul transmite comenzi către calculator","utilizatorul se conectează la internet","calculatorul funcționează normal"],
+      "intrebare": "Ce activitati iti doresti sa desfasori in zona de living?",
+      "variante": ["Jocuri cu copii", "Citit/relaxat"],
       "corect": 1
+    },
+    {
+      "intrebare": "Ai nevoie de spatiu de depozitare pentru carti?",
+      "variante": ["Da","Nu"],
+      "corect": 1
+    },
+    {
+      "intrebare": "Iti doresti o bucatarie open-space cu livingul sau separata?",
+      "variante": ["Open-space", "Separata"],
+      "corect": 0
      
     },
     {
-      "intrebare": "Calculatorul este un ansamblu de:",
-      "variante": ["componente hardware", "componente software","componente hardware și software","componente electronice"],
-      "corect": 2
+      "intrebare": "Ti se potriveste mai mult stilul minimalist sau cel extravagant?",
+      "variante": ["Minimalist","Extravagant"],
+      "corect": 0
      
     },
     {
-      "intrebare": "HardDisk-ul, cardul de memorie, CD-ul, memory stick-ul sunt",
-      "variante": ["dispozitive de stocare magnetice", "dispozitive de stocare","dispozitive de stocare optice","dispozitive de stocare electronice"],
+      "intrebare": "In privinta culorilor, te atrag mai mult culorile calde(galben,portocaliu) sau cele reci(albastru,violet)?",
+      "variante": ["Culori calde","Culori reci"],
       "corect": 1
      
     }

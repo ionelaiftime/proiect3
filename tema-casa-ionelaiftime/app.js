@@ -53,6 +53,26 @@ app.get('/', (req, res) =>
 
     res.render('index',{utilizator:session.utilizator});
 });
+app.get('/test', (req, res) =>
+{
+
+    res.render('test',{utilizator:session.utilizator});
+});
+app.get('/test4', (req, res) =>
+{
+
+    res.render('test4',{utilizator:session.utilizator});
+})
+app.get('/test2', (req, res) =>
+{
+
+    res.render('test2',{utilizator:session.utilizator});
+})
+app.get('/test3', (req, res) =>
+{
+
+    res.render('test3',{utilizator:session.utilizator});
+})
    
 app.get('/index',(req,res) =>
 {
@@ -81,7 +101,6 @@ app.get('/autentificare', (req, res) =>
   res.render('autentificare',{mesajEroare:req.cookies["mesajEroare"]});
   
 });
-
 
 
 app.post('/verificare-autentificare', (req, res) => {
@@ -117,7 +136,7 @@ app.get('/chestionar', (req, res) => {
   fs.readFile('intrebari.json', (err, data) => {
     //if (err) throw err;
     listaIntrebari = JSON.parse(data);
-    //console.log(listaIntrebari);
+   // console.log(listaIntrebari);
     res.render('chestionar', {intrebari: listaIntrebari,utilizator:session.utilizator});
   });
     
@@ -129,7 +148,7 @@ app.post('/rezultat-chestionar', (req, res) => {
  
   var a =JSON.parse(json);
   var b=0;
-  
+  console.log(a);
   for(let i=0;i<listaIntrebari.length;i++)
   {
 

@@ -24,7 +24,14 @@
                 <%}%>
             <%} %>
         <% } %>
-        <p> Raspunsuri corecte: <%- Raspunsuri_corecte -%>  </p>
+      
+        <% if(Raspunsuri_corecte==0){%>
+            <p>Va rog alegeti variante</p>
+        <%} else if(Raspunsuri_corecte==4){%>
+            <p>Stil modern</p>
+            <%} else {%>
+            <p>Stil contemporan</p>
+            <%}%> 
     </form>
 </main>
 <footer>
