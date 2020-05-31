@@ -1,14 +1,15 @@
-
 <header  >
+  
     <% if(utilizator!=null) {%>
     <h1 class="log">
-        Logat ca <%- utilizator.prenume-%> <%-utilizator.nume-%>!
+      Logat ca <%- utilizator.prenume-%> <%-utilizator.nume-%>!
+      <form action="logout" method="get">
+        <input type="submit" value="logout" class="btnlogout" /> 
+      </form>
     </h1>
     <%} %>
-    <form action="logout" method="get">
-        <input type="submit" value="logout" class="btnlogout" /> 
-    </form>
-</header>
+  
+  </header>
 <main>
         
     <form  class="test" action="test" method="GET">

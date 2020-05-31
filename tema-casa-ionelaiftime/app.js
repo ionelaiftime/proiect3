@@ -126,6 +126,31 @@ app.get('/living',(req,res) =>
     res.render('living',{utilizator:session.utilizator});
 });
 
+app.get('/alb',(req,res) =>
+{
+ 
+    res.render('alb',{utilizator:session.utilizator});
+});
+app.get('/culoare',(req,res) =>
+{
+ 
+    res.render('culoare',{utilizator:session.utilizator});
+});
+app.get('/negru',(req,res) =>
+{
+ 
+    res.render('negru',{utilizator:session.utilizator});
+});
+app.get('/designeri',(req,res) =>
+{
+ 
+    res.render('designeri',{utilizator:session.utilizator});
+});
+app.get('/contact',(req,res) =>
+{
+ 
+    res.render('contact',{utilizator:session.utilizator});
+});
 
 app.get('/logout',(req,res) =>
 {

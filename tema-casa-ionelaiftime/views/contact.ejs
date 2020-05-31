@@ -1,0 +1,48 @@
+<header  >
+  
+    <% if(utilizator!=null) {%>
+    <h1 class="log">
+      Logat ca <%- utilizator.prenume-%> <%-utilizator.nume-%>!
+      <form action="logout" method="get">
+        <input type="submit" value="logout" class="btnlogout" /> 
+      </form>
+    </h1>
+    <%} %>
+  
+  </header>
+<main>
+        
+    <form  class="test" action="contact" method="GET">
+        <h1 style="padding-top: 20px;padding-left: 100px;">
+                    
+         Contact
+        </h1>
+        <div class="divv">
+        <label for="uname"><b>Numele tau</b></label>
+        <input type="text" class="cont" placeholder="Enter Name" name="nume" required>
+        <br><br>
+    
+        <label for="email"><b>Email-ul tau </b></label>
+        <input type="email" class="cont"  placeholder="Enter Email" name="email" required>
+        
+        <br><br>
+        <label for="sub"><b>Subiect</b></label>
+        <input type="text" class="cont" placeholder="Enter Subject" name="sub" required>
+        <br><br>
+
+        <label for="msg"><b>Mesajul tau</b></label><br>
+        <textarea  style="resize: none;" rows="8" cols="169" name="comment" form="usrform">
+        </textarea>
+
+        <input type="submit" value="Trimite" class="btnsubmit" />   
+        </div>
+        </form>
+       
+    
+</main>
+        
+<footer>
+
+</footer>
+  
+
