@@ -80,6 +80,52 @@ app.get('/index',(req,res) =>
     res.render('index',{utilizator:session.utilizator});
 });
 
+app.get('/clasic',(req,res) =>
+{
+ 
+    res.render('clasic',{utilizator:session.utilizator});
+});
+
+app.get('/contemporan',(req,res) =>
+{
+ 
+    res.render('contemporan',{utilizator:session.utilizator});
+});
+app.get('/mediteranean',(req,res) =>
+{
+ 
+    res.render('mediteranean',{utilizator:session.utilizator});
+});
+app.get('/minimalist',(req,res) =>
+{
+ 
+    res.render('minimalist',{utilizator:session.utilizator});
+});
+
+app.get('/baie',(req,res) =>
+{
+ 
+    res.render('baie',{utilizator:session.utilizator});
+});
+
+app.get('/bucatarie',(req,res) =>
+{
+ 
+    res.render('bucatarie',{utilizator:session.utilizator});
+});
+
+app.get('/dormitor',(req,res) =>
+{
+ 
+    res.render('dormitor',{utilizator:session.utilizator});
+});
+
+app.get('/living',(req,res) =>
+{
+ 
+    res.render('living',{utilizator:session.utilizator});
+});
+
 
 app.get('/logout',(req,res) =>
 {
