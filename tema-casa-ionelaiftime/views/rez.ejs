@@ -1,0 +1,31 @@
+<header  >
+  
+    <% if(utilizator!=null) {%>
+    <h1 class="log">
+      Logat ca <%- utilizator.prenume-%> <%-utilizator.nume-%>!
+      <form action="logout" method="get">
+        <input type="submit" value="logout" class="btnlogout" /> 
+      </form>
+    </h1>
+    <%} %>
+  
+  </header>
+<main>
+        
+    <form  class="test" action="rezcontact" method="GET">
+        <h1 style="padding-top: 20px;padding-left: 100px;">
+                    
+            Cererea ta a fost inregistrata. Te vom contacta in cel mai scurt timp posibil.
+        </h1>
+        
+       
+        </form>
+       
+    
+</main>
+        
+<footer>
+
+</footer>
+  
+

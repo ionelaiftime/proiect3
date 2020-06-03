@@ -151,6 +151,11 @@ app.get('/contact',(req,res) =>
  
     res.render('contact',{utilizator:session.utilizator});
 });
+app.get('/rezcontact',(req,res) =>
+{
+ 
+    res.render('rez',{utilizator:session.utilizator});
+});
 
 app.get('/logout',(req,res) =>
 {
